@@ -18,4 +18,4 @@
    - '--platform'
    - 'managed'
  images:
- - 'gcr.io/$PROJECT_ID/testing-code:so-parser:latest'
+ - 'gcr.io/$PROJECT_ID/testing-code'
