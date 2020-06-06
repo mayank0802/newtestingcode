@@ -18,4 +18,4 @@
    - '--platform'
    - 'managed'
  images:
- - 'gcr.io/$PROJECT_ID/testing-code'
+ - 'gcr.io/$PROJECT_ID/testing-code' 
