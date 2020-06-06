@@ -1,0 +1,21 @@
+ steps:
+ # build the container image
+ - name: 'gcr.io/cloud-builders/docker'
+   args: ['build', '-t', 'gcr.io/kiss-16325/[testing-code]:$COMMIT_SHA', '.']
+ # push the container image to Container Registry
+ - name: 'gcr.io/cloud-builders/docker'
+   args: ['push', 'gcr.io/kiss-16325/[testing-code]:$COMMIT_SHA']
+ # Deploy container image to Cloud Run
+ - name: 'gcr.io/cloud-builders/gcloud'
+   args:
+   - 'run'
+   - 'deploy'
+   - '[testing-code]'
+   - '--image'
+   - 'gcr.io/kiss-16325/[testing-code]:$COMMIT_SHA'
+   - '--region'
+   - '[asia-east1]'
+   - '--platform'
+   - 'managed'
+ images:
+ - 'gcr.io/kiss-16325/[testing-code]:$COMMIT_SHA'
