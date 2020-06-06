@@ -16,6 +16,5 @@ steps:
    - '--region'
    - 'asia-east1'
    - '--platform'
-   - 'managed'
  images:
  - 'gcr.io/$PROJECT_ID/testing-code:$COMMIT_SHA'
