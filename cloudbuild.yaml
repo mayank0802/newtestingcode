@@ -18,4 +18,4 @@
    - '--platform'
    - 'managed'
  images:
- - 'gcr.io/$PROJECT_ID/desparados' 
+ - 'gcr.io/$PROJECT_ID/desperados' 
