@@ -10,7 +10,7 @@
    args:
    - 'run'
    - 'deploy'
-   - 'testing-code'
+   - 'new_testing_code'
    - '--image'
    - 'gcr.io/$PROJECT_ID/new_testing_code:$COMMIT_SHA'
    - '--region'
