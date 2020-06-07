@@ -10,7 +10,7 @@
    args:
    - 'run'
    - 'deploy'
-   - 'testing-code'
+   - 'desperados'
    - '--image'
    - 'gcr.io/kiss-16325/desperados'
    - '--region'
