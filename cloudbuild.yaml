@@ -17,5 +17,7 @@
    - 'asia-east1'
    - '--platform'
    - 'managed'
+   - '--network'
+   - 'cloudbuild'
  images:
  - 'gcr.io/$PROJECT_ID/desperados' 
